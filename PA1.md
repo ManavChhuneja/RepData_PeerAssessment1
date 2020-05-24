@@ -117,7 +117,7 @@ Since we already have the data needed, we can create histogram fairly quickly.
 hist(total_steps$total, breaks = 10, main = "Total Steps Per Day", xlab = "Total Steps")
 ```
 
-![](PA1_template_files/figure-html/histogram of total steps each day-1.png)<!-- -->
+![](PA1_files/figure-html/histogram of total steps each day-1.png)<!-- -->
 
 ```r
 dev.copy(png,'figures/Total Steps Per Day Histogram.png')
@@ -183,7 +183,7 @@ activity %>%
              y = "Average Steps")
 ```
 
-![](PA1_template_files/figure-html/time series plot of average steps per interval-1.png)<!-- -->
+![](PA1_files/figure-html/time series plot of average steps per interval-1.png)<!-- -->
 
 ```r
 dev.copy(png,'figures/Average Steps Per Interval Time Series.png')
@@ -352,7 +352,7 @@ Comparing these to the previous values, we can see that there's a fair differenc
 hist(data2$total, breaks = 10, main = "Total Steps Per Day", xlab = "Total Steps")
 ```
 
-![](PA1_template_files/figure-html/Histogram after replacing NAs-1.png)<!-- -->
+![](PA1_files/figure-html/Histogram after replacing NAs-1.png)<!-- -->
 
 ```r
 dev.copy(png,'figures/Total Steps Per Day histogram NAs removed.png')
@@ -423,7 +423,7 @@ ggplot(data3, aes(x = interval, y = avg)) +
              y = "Average Steps")
 ```
 
-![](PA1_template_files/figure-html/Weekday vs weekend average steps per interval-1.png)<!-- -->
+![](PA1_files/figure-html/Weekday vs weekend average steps per interval-1.png)<!-- -->
 
 ```r
 dev.copy(png,'figures/Time Series Plot Weekday vs Weekend.png')
